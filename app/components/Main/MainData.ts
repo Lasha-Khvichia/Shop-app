@@ -1,0 +1,181 @@
+type HomePage = card[];
+
+interface card {
+  id: number;
+  name: string;
+  price: string;
+  salePrice?: string;
+  seller: string;
+  saleDate?: Date;
+  image: string;
+}
+
+export const dummyData: HomePage = [
+  {
+    id: 1,
+    name: "Rolex Submariner Watch",
+    price: "$12,499",
+    salePrice: "$10,999",
+    seller: "Luxury Timepieces",
+    saleDate: new Date("2025-12-31"),
+    image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=500",
+  },
+  {
+    id: 2,
+    name: 'Samsung 65" QLED 4K TV',
+    price: "$1,299",
+    seller: "TechMart Electronics",
+    image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500",
+  },
+  {
+    id: 3,
+    name: "Intel Core i9 Gaming PC",
+    price: "$2,499",
+    salePrice: "$2,199",
+    seller: "Custom Builds Pro",
+    saleDate: new Date("2025-11-30"),
+    image: "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=500",
+  },
+  {
+    id: 4,
+    name: "ASUS ROG Gaming Laptop",
+    price: "$1,899",
+    seller: "PC World",
+    image: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500",
+  },
+  {
+    id: 5,
+    name: "Nike Dri-FIT T-shirt",
+    price: "$34.99",
+    salePrice: "$24.99",
+    seller: "Athletic Wear Co",
+    saleDate: new Date("2025-12-15"),
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500",
+  },
+  {
+    id: 6,
+    name: "Feastables Chocolate Bar",
+    price: "$4.99",
+    seller: "Sweet Treats Market",
+    image: "https://images.unsplash.com/photo-1511381939415-e44015466834?w=500",
+  },
+  {
+    id: 7,
+    name: "Apple AirPods Pro",
+    price: "$249",
+    salePrice: "$199",
+    seller: "Audio Haven",
+    saleDate: new Date("2025-12-01"),
+    image: "https://images.unsplash.com/photo-1606841837239-c5a1a4a07af7?w=500",
+  },
+  {
+    id: 8,
+    name: "Sony PlayStation 5",
+    price: "$499",
+    seller: "Gaming Central",
+    image: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=500",
+  },
+  {
+    id: 9,
+    name: "Dyson V15 Vacuum Cleaner",
+    price: "$649",
+    salePrice: "$549",
+    seller: "Home Essentials",
+    saleDate: new Date("2025-11-28"),
+    image: "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=500",
+  },
+  {
+    id: 10,
+    name: "Canon EOS R6 Camera",
+    price: "$2,499",
+    seller: "Photography Pro",
+    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=500",
+  },
+  {
+    id: 11,
+    name: "Herman Miller Office Chair",
+    price: "$1,395",
+    seller: "Workspace Solutions",
+    image: "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=500",
+  },
+  {
+    id: 12,
+    name: "Ninja Air Fryer",
+    price: "$129",
+    salePrice: "$99",
+    seller: "Kitchen Masters",
+    saleDate: new Date("2025-12-10"),
+    image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=500",
+  },
+  {
+    id: 13,
+    name: "Bose QuietComfort Headphones",
+    price: "$349",
+    seller: "Sound Studio",
+    image: "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500",
+  },
+  {
+    id: 14,
+    name: "Kindle Paperwhite",
+    price: "$139",
+    salePrice: "$119",
+    seller: "Book Haven",
+    saleDate: new Date("2025-12-20"),
+    image: "https://images.unsplash.com/photo-1592496431122-2349e0fbc666?w=500",
+  },
+  {
+    id: 15,
+    name: "Levi's 501 Original Jeans",
+    price: "$89",
+    seller: "Denim World",
+    image: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=500",
+  },
+  {
+    id: 16,
+    name: "Instant Pot Duo Plus",
+    price: "$119",
+    salePrice: "$79",
+    seller: "Kitchen Masters",
+    saleDate: new Date("2025-11-25"),
+    image: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=500",
+  },
+  {
+    id: 17,
+    name: "Fitbit Charge 6",
+    price: "$159",
+    seller: "Fitness Tech",
+    image: "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=500",
+  },
+  {
+    id: 18,
+    name: "Adidas Ultraboost Sneakers",
+    price: "$189",
+    salePrice: "$149",
+    seller: "Sneaker Hub",
+    saleDate: new Date("2025-12-05"),
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+  },
+  {
+    id: 19,
+    name: "KitchenAid Stand Mixer",
+    price: "$449",
+    seller: "Culinary Tools",
+    image: "https://images.unsplash.com/photo-1578269174936-2709b6aeb913?w=500",
+  },
+  {
+    id: 20,
+    name: "Ray-Ban Aviator Sunglasses",
+    price: "$199",
+    seller: "Eyewear Express",
+    image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500",
+  },
+  {
+    id: 21,
+    name: "Patagonia Down Jacket",
+    price: "$329",
+    salePrice: "$249",
+    seller: "Outdoor Gear Co",
+    saleDate: new Date("2025-12-31"),
+    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500",
+  },
+];

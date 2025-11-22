@@ -1,10 +1,25 @@
+"use client";
 type ButtonProps = {
-    text: string;
-    className?: string;
-}
+  text: string;
+  className?: string;
+  src?: string;
+};
 
 export const Button = (props: ButtonProps) => {
-    return (
-        <button className={'cursor-pointer' + ' ' + props.className}>{props.text}</button>
-    )
-}
+  const handleClick = () => {
+    window.open(
+      "https://www.hogwartslegacy.com/en-gb",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+  return (
+    <button
+      type="button"
+      className={"cursor-pointer" + " " + props.className}
+      onClick={handleClick}
+    >
+      {props.text}
+    </button>
+  );
+};

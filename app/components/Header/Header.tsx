@@ -1,10 +1,16 @@
+'use client'
+import { colorChange } from "@/app/colorChanger";
 import { Button } from "../Button/Button";
 import { HeaderNav } from "../HeaderNav/HeaderNav";
 import { Icon } from "../Icon/Icon";
+import { ColorChange } from "../ColorChange/ColorChange";
 
 export const Header = () => {
+  const { getColor } = new colorChange();
+  console.log(getColor());
+  
   return (
-    <header className="flex justify-between items-center p-[16px]!">
+    <header className={"flex justify-between items-center p-4!" + ' ' + 'bg-[' + getColor() + ']'}>
       <Icon
         online="https://img.icons8.com/color/512/shopify.png"
         width={100}
@@ -12,6 +18,7 @@ export const Header = () => {
         alt="header"
       />
       <div className="flex gap-8">
+        <ColorChange />
         <HeaderNav />
         <Button
           text="Cart"
